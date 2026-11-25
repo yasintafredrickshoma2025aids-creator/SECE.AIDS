@@ -58,3 +58,8 @@ console.log(nameList);
 let name ="shoma"
 let mark = 95
 console.log(`I am ${name} have scored ${mark}`)
+
+function displayInput() {
+    const inputValue = document.getElementById("input").value;
+    document.getElementById("output").textContent = inputValue;
+}

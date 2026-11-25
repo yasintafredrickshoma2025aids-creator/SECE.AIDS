@@ -1,0 +1,39 @@
+.app {
+  min-height: 100vh;
+  padding: 16px;
+  text-align: left;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.button-row button,
+.app > button {
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #fff;
+  color: #242424;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button-row .button-delete {
+  border-color: #dc2626;
+  background: #dc2626;
+  color: #fff;
+}
+
+.button-row .button-secondary {
+  background: #f3f4f6;
+}
+
+.button-row .button-ghost {
+  border-color: transparent;
+  background: transparent;
+}

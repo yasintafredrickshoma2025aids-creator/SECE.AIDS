@@ -1,0 +1,7 @@
+{
+  "name": "sece-aids",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix frontend run dev"
+  }
+}
