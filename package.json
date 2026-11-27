@@ -3,5 +3,8 @@
   "private": true,
   "scripts": {
     "start": "npm --prefix frontend run dev"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
   }
 }

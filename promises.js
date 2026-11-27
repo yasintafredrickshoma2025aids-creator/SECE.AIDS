@@ -1,13 +1,24 @@
-const foodorder = new Promise((resolve,reject)=>{
-    let foodReady =true;
-    if(foodReady){
-        resolve("food is ready")
-    }
-    else{ 
-        reject("food is not ready")
-    }
 
-})
-foodorder 
-     .then((result)=>console.log(result))
-     .catch((error)=>console.log(error))
+function getIUser() {
+    return new Promise((resolve, reject) => {
+        const user = {
+            id: 1,
+            name: "Yasinta",
+            email: "yasinta@example.com"
+        };
+
+        if (user) {
+            resolve(user);
+        } else {
+            reject("User not found");
+        }
+    });
+}
+
+getIUser()
+    .then((user) => {
+        console.log("User Data:", user);
+    })
+    .catch((error) => {
+        console.log("Error:", error);
+    });

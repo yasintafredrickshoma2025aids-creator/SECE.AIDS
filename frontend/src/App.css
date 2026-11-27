@@ -12,7 +12,7 @@
 }
 
 .button-row button,
-.app > button {
+.app button {
   padding: 6px 12px;
   border: 1px solid #d1d5db;
   border-radius: 4px;
@@ -36,4 +36,63 @@
 .button-row .button-ghost {
   border-color: transparent;
   background: transparent;
+}
+
+.registration-form {
+  display: grid;
+  gap: 14px;
+  width: min(100%, 360px);
+}
+
+.registration-field {
+  display: grid;
+  gap: 6px;
+}
+
+.registration-field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.registration-input {
+  width: 100%;
+  min-width: 0;
+  padding: 9px 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+}
+
+.registration-input:focus-visible {
+  border-color: #4f46e5;
+  outline: 3px solid rgb(79 70 229 / 18%);
+}
+
+.registration-input-invalid {
+  border-color: #dc2626;
+}
+
+.registration-error,
+.registration-success {
+  margin: 0;
+  font-size: 13px;
+}
+
+.registration-error {
+  color: #b91c1c;
+}
+
+.registration-success {
+  color: #15803d;
+}
+
+.registration-form button {
+  min-height: 38px;
+  border-color: #d1d5db;
+  border-radius: 4px;
+  background: #f3f4f6;
+  color: #242424;
+  font-weight: 600;
 }
